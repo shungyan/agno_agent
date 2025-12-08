@@ -1,0 +1,27 @@
+version: "0.1"
+
+services:
+  agno-server:
+    build:
+      context: ./agent
+      dockerfile: Dockerfile
+    container_name: agno-server
+    ports:
+      - "7777:7777"
+    restart: always
+    depends_on:
+      - mcp-server
+
+    volumes:
+      - ./agent/agno.db:/app/agno.db
+
+  mcp-server:
+    build:
+      context: ./mcp
+      dockerfile: Dockerfile
+    container_name: mcp-server
+    ports:
+      - "6969:6969"
+    restart: always
+
+
