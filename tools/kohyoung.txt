@@ -1,0 +1,24 @@
+Zenith LiTE
+The Best Value True 3D AOI Solution
+Zenith LiTE’s patented 3D AOI system effectively measures true profilometric component shapes, foreign materials, patterns, and solder joints on assembled PCBs to overcome the vulnerabilities and shortcomings of 2D AOI’s.
+Meet Zenith LiTE with multiple resolutions and configurable options to meet the needs of applications.
+Key Features
+Perfect True 3D Inspection Performance
+Real-time Warp Compensation
+Quick and Simple Inspection Condition Setting
+AI-Powered Auto Programming (KAP)
+KSMART Solutions: True 3D Measurement-based Process Control System
+Zero-defect through AI-Powered Koh Young Process Optimizer (KPO) Mounter
+
+Zenith Alpha
+The Best Value True 3D AOI with Enhanced Capabilities
+The Zenith Alpha is a True 3D AOI solution powered by artificial intelligence and machine learning, combining the best optomechatronics and vision technologies to deliver outstanding performance without sacrificing accuracy.
+Meet Zenith Alpha with multiple resolutions and configurable options to meet the needs of applications.
+Key Features
+Enhanced 3D Measurement using Proprietary AI Technology
+High Accuracy and Speed for Demanding Production Line
+Advanced Tall Component Inspection
+Whole-board Foreign Material Inspection (WFMI)
+AI-Powered Auto Programming (KAP)
+KSMART Solutions: True 3D Measurement-based Process Control System
+Zero-defect through AI-Powered Koh Young Process Optimizer (KPO) Mounter

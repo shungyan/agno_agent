@@ -6,10 +6,27 @@ from agno.db.sqlite import SqliteDb
 from agno.tools.mcp import MCPTools
 from agno.os import AgentOS
 import uvicorn
+from agno.knowledge.knowledge import Knowledge
+from agno.vectordb.chroma import ChromaDb
+import asyncio
+from agno.knowledge.embedder.openai import OpenAIEmbedder
+
 
 INSTRUCTION = """
 You are a agent that can do RAG
 """
+
+# knowledge = Knowledge(
+#     name="Basic SDK Knowledge Base",
+#     description="Agno 2.0 Knowledge Implementation with ChromaDB",
+#     vector_db=ChromaDb(
+#         collection="kohyoung",
+#         path="tmp/chromadb",
+#         persistent_client=True,
+#         embedder=OpenAIEmbedder(id="text-embedding-3-small"),  # Add this!
+#     ),
+#     contents_db=SqliteDb(db_file="tmp/knowledge.db", id="knowledge_db"),
+# )   
 
 # Create the Agno Agent
 agno_agent = Agent(

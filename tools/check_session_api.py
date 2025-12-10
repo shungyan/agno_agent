@@ -1,18 +1,14 @@
 import requests
 
-# URL to list sessions
-url = "http://localhost:7777/sessions"
-params = {
-    "type": "agent",
-    "component_id": "agno-agent",
-    "limit": 20,
-    "page": 1,
-    "sort_by": "created_at",
-    "sort_order": "desc"
+url = "http://localhost:7777/sessions?type=agent"
+headers = {
+    "Content-Type": "application/json"
 }
 
-response = requests.get(url, params=params)
-response.raise_for_status()
+response = requests.get(url, headers=headers)
+
+print("Status Code:", response.status_code)
+print("Response:", response.text)
 
 sessions = response.json()
 

@@ -26,13 +26,10 @@ def rag(
 ) -> dict:
     """
     use rag to understand key features of each machine
-
     if multiple machine is queried, use rag one by one, for example:
     what is the difference between zenith lite and zenith alpha
-
     rag(zenith lite)
     rag(zenith alpha)
-
     Args:
     query (str): Machine name you want to know
     """

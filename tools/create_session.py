@@ -1,9 +1,17 @@
 import requests
-db_id = "21138089-9477-5cb5-98c0-fdc32ef6f1e0"
-session_url = f"http://localhost:7777/sessions?type=agent&db_id={db_id}&session_name=test"
 
-response = requests.post(session_url, json={})
-response.raise_for_status()
+url = "http://localhost:7777/sessions?type=agent"
+headers = {
+    "Content-Type": "application/json"
+}
+data = {
+    "session_name": "My Session"
+}
+
+response = requests.post(url, json=data, headers=headers)
+
+print("Status Code:", response.status_code)
+print("Response:", response.text)   
 session_data = response.json()
 session_id = session_data.get("session_id")
 session_name = session_data.get("session_name")

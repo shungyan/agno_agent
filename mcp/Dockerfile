@@ -14,7 +14,7 @@ ENV PATH="/root/.local/bin/:$PATH"
 
 RUN uv venv
 
-RUN uv pip install -U fastmcp dotenv requests ollama chromadb
+RUN uv pip install -U fastmcp dotenv requests ollama chromadb 
 
 COPY . /app
 

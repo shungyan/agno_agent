@@ -14,7 +14,7 @@ ENV PATH="/root/.local/bin/:$PATH"
 
 RUN uv venv
 
-RUN uv pip install -U agno anthropic mcp 'fastapi[standard]' sqlalchemy ollama
+RUN uv pip install -U agno anthropic mcp 'fastapi[standard]' sqlalchemy ollama chromadb openai
 
 COPY . /app
 
